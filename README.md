@@ -1,5 +1,5 @@
 # testing
-
+```json
 {
   "type": "array",
   "items": {
@@ -25,3 +25,4 @@
     "required": ["id", "eventType", "subject", "eventTime", "data"]
   }
 }
+```
