@@ -6,7 +6,7 @@ def check_rule1(data_dict):
     if narration:
         match = re.search(pattern, narration, flags=re.IGNORECASE)
         if match:
-            if data_dict.get('OFFICE_FORACID', '') in ["0017841160201"]:
+            if data_dict.get('OFFICE_FORACID', '') in [""]:
                 return "Valid Transaction", 2
             else:
                 return f"Invalid Account ID, Check the transaction TRAN_ID {data_dict['TRAN_ID']} and TRAN_DATE {data_dict['TRAN_DATE']}", 1
